@@ -21,14 +21,14 @@ formatacao_dias = (
 formatacao_dias = formatacao_dias.sort_values(by="total_acidentes", ascending=False)
 formatacao_dias = formatacao_dias.reset_index(drop=True)
 
-st.title("Prova Final 3A2")
+st.title("Prova Final Python")
 st.header("Acidentes em BH por dias da semana")
 st.sidebar.title("Filtros de Análise")
 add_selectbox = st.sidebar.selectbox(
     "Qual estilo deseja visualizar?",
     ("Tabela", "Gráfico")
 )
-
+st.text("Giovanni Trivellato - 3A2")
 if add_selectbox == "Tabela":
     st.subheader("Visualização por tabela")
     st.write(formatacao_dias)
