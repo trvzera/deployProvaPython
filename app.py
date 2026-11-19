@@ -31,7 +31,8 @@ add_selectbox = st.sidebar.selectbox(
 st.text("Giovanni Trivellato - 3A2")
 if add_selectbox == "Tabela":
     st.subheader("Visualização por tabela")
-    st.write(formatacao_dias)
+    st.dataframe(formatacao_dias)
+    st.write("Fonte: https://basedosdados.org/")
 elif add_selectbox == "Gráfico":
     st.subheader("Visualização por gráfico")
     fig = px.bar(
@@ -44,5 +45,6 @@ elif add_selectbox == "Gráfico":
         title="Quantidades de acidente por dia da semana"
     )
     st.plotly_chart(fig, use_container_width=True)
+    st.write("Fonte: https://basedosdados.org/")
 else:
     st.subheader("Nenhuma opção selecionada")
