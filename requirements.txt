@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+plotly
+python-calamine
+plotly.express
+jinja2
+openpyxl
